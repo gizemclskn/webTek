@@ -1,0 +1,192 @@
+<!-- 
+****************************************************************************************************************************************
+****************************************************************************************************************************************
+*******************************************************Gizem ÇALIŞKAN B181200010*******************************************************
+****************************************************BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ*****************************************************
+*********************************************************WEB TEKNOLOJİLERİ ÖDEVİ********************************************************
+****************************************************************************************************************************************
+****************************************************************************************************************************************
+-->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <title>æKayıt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="signup.css">
+
+
+</head>
+<body>
+    <style>
+        body {
+          background-color: rgb(255, 139, 124);
+        }
+    </style>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">ANA SAYFA</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">SOSYAL MEDYA<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://instagram.com/gizem.clskn23/" target="_blank">Gizem Çalışkan</a></li>
+                  
+          </ul>
+        </li>
+        <li><a href="galeri.html">GALERİ</a></li>
+        <li><a href="maps.html">KONUM</a></li>
+        <li><a href="info.html">HAKKIMIZDA</a></li>
+        <li><a href="contact.html">İLETİŞİM</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Kayıt Ol</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<form action="signup.html" method="post">
+      
+    <h1>Kayıt Ol</h1>
+    
+    <fieldset>
+      <legend><span class="number">1</span></legend>
+      <label for="name">Ad:</label>
+      <input type="text" id="name" name="user_name">
+      
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email">
+      
+      <label for="password">Şifre:</label>
+      <input type="password" id="password" name="user_password">
+      
+      <label>Yaş:</label>
+      <br>
+      <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">18 Altı</label><br>
+      <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18" class="light">18 veya Üstü</label><br>   
+    </fieldset>
+    
+    <fieldset>
+      <legend><span class="number">2</span></legend>
+      <label for="bio">Kendinizi Tanıtın:</label>
+      <textarea id="bio" name="user_bio"></textarea>
+    </fieldset>
+    <fieldset>
+    <label for="job">Meslek:</label>
+    <select id="job" name="user_job">
+      <optgroup label="Emekli">
+        <option value="emekli_memur">Emekli Memur</option>
+        <option value="emekli_ogrt">Emekli Öğretmen</option>
+        <option value="emekli_isci">Emekli İşçi</option>
+        <option value="emekli_asker">Emekli Asker</option>
+        <option value="emekli_doktor">Emekli Doktor</option>
+      </optgroup>
+      <optgroup label="Çalışıyor">
+        <option value="ogrt">Öğretmen</option>
+        <option value="memur">Memur</option>
+        <option value="isci">İşçi</option>
+        <option value="Doktor">Doktor</option>
+        <option value="muhendis">Mühendis</option>
+        <option value="serbest_meslek">Serbest Meslek</option>
+        <option value="ciftci">Çiftçi</option>
+        <option value="diger">Diğer</option>
+
+      </optgroup>
+      <optgroup label="Öğrenci">
+        <option value="ilokul">İlkokul</option>
+        <option value="ortaokul">Ortaokul</option>
+        <option value="lise">Lise</option>
+        <option value="onlisans">Önlisans</option>
+        <option value="lisans">Lisans</option>
+        <option value="yuksek_lisans">Yüksek Lisans</option>
+        <option value="aof">Açık Öğretim Fakültesi</option>
+        <option value="diger">Diğer</option>
+      </optgroup>
+    </select>
+    
+      <label>İlgi alanlarınız:</label>
+      <br>
+      <input type="checkbox" id="design" value="Teknoloji" name="user_interest"><label class="light" for="design">Teknoloji</label><br>
+      <input type="checkbox" id="design" value="Felsefe" name="user_interest"><label class="light" for="design">Felsefe</label><br>
+      <input type="checkbox" id="design" value="resim" name="user_interest"><label class="light" for="design">Resim</label><br>
+      <input type="checkbox" id="design" value="Oyun" name="user_interest"><label class="light" for="design">Oyun</label><br>
+      <input type="checkbox" id="design" value="Spor" name="user_interest"><label class="light" for="design">Spor</label><br>
+      <input type="checkbox" id="design" value="Sinema" name="user_interest"><label class="light" for="design">Sinema</label><br>
+    </fieldset>
+    <button type="submit">Kaydı Tamamla!</button>
+  </form>
+
+  
+  <div class="footer">  
+    <footer class="page-footer font-small blue pt-4">
+      <hr>
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase">Gizem</h5>
+          <p>All rights reserverd.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Sosyal Medya</h5>
+          <ul class="list-unstyled">
+            
+            <li>
+              <a href="https://instagram.com/gizem.clskn23/" target="_blank">Gizem Çalışkan</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">İletişim</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=905531066409">+90 541 815 70 64</a>
+            </li>
+           
+           
+            <li>
+              <a href="https://gizemcaliskan24@gmail.com">gizemcaliskan24@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </footer>
+    </div>
+    <style>
+      .footer{
+      background-size: cover;
+      min-height: 100%;
+      }
+      footer{
+      background-color: #222222;
+      font-family: sans-serif;-ms-text-size-adjust:100%;color: black;
+      padding: 10px;
+      padding-bottom: 20px;
+      position:relative;
+      bottom:0;
+      width:100%;
+      overflow:hidden;
+      }
+      .text-uppercase{
+      color: #3d3d3d;
+      font-weight: bold;
+      }
+    </style>
+  
+</body>
+</html>
